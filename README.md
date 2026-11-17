@@ -1,77 +1,90 @@
-# 📋 Kanban Board
+# 📋 Kanban Board — Full-Stack Task Management Application
 
-A modern task management application built with Next.js and designed to help users organize and manage tasks using a Kanban-style workflow.
+A modern, full-stack **Kanban task management application** built with **Next.js**, **TypeScript**, and **dnd-kit**. Designed for smooth productivity workflows, it enables users to organize tasks across customizable columns with intuitive drag-and-drop interactions, real-time persistence, and secure authentication.
 
-## 🌐 Live Demo
-
-https://kanban-board-ochre-iota.vercel.app/
-
-## 💻 GitHub Repository
-
-https://github.com/rahulchandasil/kanban-board
+🌐 **Live Demo:** [https://vercel.app](https://vercel.app)  
+💻 **Repository:** [://github.com](https://://github.com)
 
 ---
 
-## 📸 Project Preview
+## ✨ Key Features
 
-![Kanban Board](./public/kanban-board.png)
-
-> Add your actual Kanban Board screenshot at `public/kanban-board.png`.
-
----
-
-## ✨ Features
-
-- 🔐 User Authentication
-- 📋 Kanban-style task management
-- 🖱️ Drag-and-drop task organization
-- ➕ Create and manage tasks
-- 🔄 Move tasks between workflow stages
-- 📊 Organized project dashboard
-- 📱 Responsive user interface
-- ⚡ Fast and modern Next.js application
-- 🗄️ Database integration with Supabase
+- **Drag-and-Drop Workflow:** Smooth, accessible card and column reordering powered by **`@dnd-kit`**.
+- **Board & Task Management:** Create, edit, organize, and delete tasks across workflow stages (e.g., *To Do*, *In Progress*, *Done*).
+- **Due Dates & Task Details:** Assign due dates, descriptions, and priority tracking to stay on top of deadlines.
+- **Secure Authentication:** Sign up and log in using email/password authentication or **Google OAuth**.
+- **Real-Time Database Persistence:** Instant synchronization of board states and task updates across sessions.
+- **Type-Safe Architecture:** Built end-to-end with **TypeScript** for cleaner code maintainability and fewer runtime bugs.
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Frontend
-
-- Next.js
-- React
-- TypeScript
-- Tailwind CSS
-
-### Backend & Database
-
-- Supabase
-
-### Deployment
-
-- Vercel
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **Drag & Drop:** `@dnd-kit/core`, `@dnd-kit/sortable`
+- **Styling:** Tailwind CSS
+- **Authentication:** Google OAuth / Session Auth
+- **Deployment:** Vercel
 
 ---
 
-## 🏗️ Project Architecture
+## 📂 Project Structure
 
-
+```text
 kanban-board/
-│
-├── app/
-│   ├── page.tsx
-│   ├── layout.tsx
-│   └── ...
-│
-├── components/
-│   └── ...
-│
-├── public/
-│   └── kanban-board.png
-│
-├── ...
-│
+├── public/                 # Static assets & preview screenshots
+├── src/
+│   ├── app/                # Next.js App Router pages & API routes
+│   ├── components/         # Kanban Board, Column, TaskCard, Modals
+│   ├── hooks/              # Custom hooks for drag-and-drop & state
+│   ├── lib/                # Database & Auth configuration
+│   └── types/              # TypeScript interfaces for Boards & Tasks
 ├── package.json
-├── tsconfig.json
-├── next.config.ts
-└── README.md
+└── tsconfig.json
+```
+
+---
+
+## 🚀 Run Locally
+
+### Prerequisites
+- Node.js (v18 or higher)
+
+### 1. Clone the Repository
+```bash
+git clone https://://github.com.git
+cd kanban-board
+```
+
+### 2. Install Dependencies
+```bash
+npm install
+```
+
+### 3. Configure Environment Variables
+Create a `.env.local` file in the root directory and add your database and authentication keys:
+```env
+# Add your required environment variables here (e.g., DATABASE_URL, GOOGLE_CLIENT_ID, etc.)
+```
+
+### 4. Start the Development Server
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
+
+---
+
+## 📸 Project Preview
+
+*(Delete this line and drag-and-drop a screenshot of your live Kanban board directly into the GitHub editor here so the broken image icon disappears!)*
+
+---
+
+## 👨‍💻 Author
+
+**Rahul Chanda Sil**  
+- **GitHub:** [@rahulchandasil](https://github.com)  
+- **LinkedIn:** [Rahul Chanda Sil](https://linkedin.com)  
+- **Location:** Kolkata, West Bengal, India
